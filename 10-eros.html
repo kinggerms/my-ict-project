@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+body{
+    background:#0a0a0a;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.page-title {
+    text-align: center;
+    color: cyan;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.page-title:hover {
+    text-shadow: 0 0 20px cyan;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    margin-top:60px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card{
+    width:300px;
+    text-align:center;
+    background:#111;
+    border:2px solid cyan;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 0 20px cyan;
+    transition: 0.3s;
+}
+
+.card img{
+    width:200px;
+    border-radius:10px;
+    border:2px solid cyan;
+}
+
+.card h1{
+    color:cyan;
+    margin: 15px 0;
+}
+
+.card p{
+    color:#ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 35px cyan;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .card {
+        width: 280px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<h1 class="page-title">
+⚡ REÑOS x MAYAGMA ⚡
+</h1>
+
+<div class="container">
+
+    <div class="card">
+        <h1>REÑOS</h1>
+        <img src="lans.png" alt="Lans profile picture">
+        <p>
+           I like Lans because she creates fun, informative, and easy-to-understand content. Her videos are entertaining, and I enjoy the positive energy and creativity she brings to every post, which makes me look forward to watching her content.
+        </p>
+    </div>
+
+    <div class="card">
+        <h1>MAYAGMA</h1>
+        <img src="malupiton.jpg" alt="Malupiton profile picture">
+        <p>
+           I like Malupiton because he makes funny and relatable videos that always make me laugh. I enjoy his unique sense of humor, creative skits, and memorable catchphrases. His content helps brighten my day, and I appreciate how he entertains people while staying true to his personality.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
